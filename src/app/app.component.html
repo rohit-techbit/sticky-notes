@@ -1,0 +1,13 @@
+<div class="boundary">
+	<div class="app">
+		<app-note cdkDrag [cdkDragData]="note" (cdkDragEnded)="onDragEnded($event,note)" [cdkDragFreeDragPosition]="note.dragPosition"
+		*ngFor="let note of notes" (dismiss)="deleteNote($event)" (focusout)="saveNote($event)" 
+		id="{{note.id}}">{{note.content}}</app-note>
+	
+		<div  class="toolbar" id="toolbar" tabindex="0">
+			<button class="add material-icons" (click)="addNote()" >
+		note_add
+			</button>  
+		</div>
+	</div>
+</div>

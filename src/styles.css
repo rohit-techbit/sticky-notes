@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+/* Styles go here */
+
+* {
+    box-sizing: border-box;
+}
+
+.app app-note {
+  /* flex: 0 0 calc(50% - 1em); 
+  padding-left: 0.5em; */
+  width: 50%;
+  float: left;
+  padding: 5px;
+   
+}
+
+@media only screen and (min-width: 400px) {
+  .app app-note {
+    width: 20%;
+  }
+}
+
+/* @media (min-width: 30em){
+  .app app-note {
+      flex: 0 0 calc(33.3333% - 1em);
+  }
+}
+
+@media (min-width: 48em) {
+  .app app-note {
+    flex: 1
+  }
+} */
+
+
